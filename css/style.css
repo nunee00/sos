@@ -1,0 +1,346 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Bungee Tint" , sans-serif;
+    list-style: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+}
+
+header{
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 33px 9%;
+    background: transparent;
+}
+body{
+    background: black;
+}
+.logo{
+    font-size: 30px;
+    font-weight: 700;
+    
+}
+
+
+section{
+    padding: 2rem 7%;
+    
+}
+.heading{
+    font-family: "Ubuntu", sans-serif;
+    text-align: center;
+    color: white;
+    text-transform: uppercase;
+    padding-bottom: 3.5rem;
+    font-size: 3rem;
+
+}
+
+.navlist{
+    display: flex;
+}
+.navlist a{ 
+    margin-left: 60px;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    transition: all .55s ease;
+}
+.navlist a:hover{
+    border-bottom: 2px solid white;
+}
+#menu-icon{
+    color: white;
+    font-size: 30px;
+    z-index: 10001;
+    cursor: pointer;
+    display: none;
+}
+
+.hero{
+    height: 100%;
+    width: 100%;
+    min-height: 100vh;
+    background: b;
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+    gap: 2rem;
+}
+section{
+    padding: 0 19%;
+}
+
+.hero-text h1{
+    font-family: "Bungee Tint" , sans-serif;
+    font-size: 90px;
+    line-height: 1;
+    color: rgb(217, 53, 53);
+    margin: 0 0 45px;
+}
+.hero-text p{
+    font-family: "Mitr", sans-serif;
+    color: white;
+    font-size: 25px;
+    line-height: 1.9;
+    margin-bottom: 40px;
+}
+
+.hero-img img{
+    width: 500px;
+    height: auto;
+}
+.hero-text a{
+    display: inline-block;
+    color: white;
+    background: #aa1100e2;
+    border: 1px solid transparent;
+    padding: 25px 40px;
+    line-height: 1.4;
+    font-size: 36px;
+    font-weight: 500;
+    border-radius: 30px;
+    text-transform: uppercase;
+    transition: all .55s ease;
+}
+.hero-text a:hover{
+    background: transparent;
+    border: 1px solid white;
+    transform: translateX(8px);
+}
+.hero-text a.ctaa i{
+    vertical-align: middle;
+    margin-right: 5px;
+}
+
+@media (max-width: 1535px){
+    heager{
+        padding: 15px 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .icons{
+        padding: 0 3%;
+        transition: .2s;
+    }
+}
+@media (max-width: 1460px){
+    section{ padding: 0 12%;
+    transition: .2s;
+    }
+}
+@media (max-width: 1340px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+    .hero-text h1{
+        font-size: 75px;
+        margin: 0 0 30px;
+    }
+    .hero-text p{
+        margin-bottom: 25px;
+    }ss
+}
+@media (max-width: 1195px){
+    section{
+        padding: 0 3%;
+        transition: .2s;
+    }
+    .hero-text{
+        padding-top: 115px;
+    }
+    .hero-img{
+        text-align: center;
+    }
+    .hero-img img{
+        width: 400px;
+        height: auto;
+    }
+    .hero{
+        height: 100%;
+        gap: 1rem;
+        grid-template-columns: 1fr;
+    }
+    .icons{
+        display: none;
+    }
+}
+@media (max-width: 990px){
+    #menu-icon{
+        display: block;
+    }
+    .navlist{
+        position: absolute;
+        top: 100%;
+        right: -100%;
+        width: 130px;
+        height: 25vh;
+        background: #aa1100e2;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 30px 20px;
+        transition: all .55s ease;
+    }
+    .navlist a{
+        margin-left: 0;
+        display: block;
+        margin: 15px 0;
+    }
+    .navlist.open{
+        right: 0;
+    }
+}
+@media (max-width: 680px){
+    .hero-img img{
+        width: 100%;
+        height: auto;
+    }
+}
+
+
+.about .row{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+.about .row .row-img img{
+    flex: 1 1 45rem;
+    width: 400px;
+   
+    border-radius: 10px;
+}
+.about .row .content {
+    flex: 0 0 40rem;
+    padding: 50px;
+    background: #23232387;
+    border-radius: 10px;
+}
+
+.about .row .content h3{
+    font-family: "Ubuntu", sans-serif;
+   font-size: 30px;
+   color: white;
+   margin: 0 0 30px;
+   text-align: right;
+   line-height: 1;
+}
+
+.about .row .content p{
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 0 0 30px;
+    text-align: right;
+    line-height: 1.9;
+}
+.imgg img{
+    flex: 1 1 45rem;
+    width: 400px;
+   
+    border-radius: 10px;
+}
+
+.about .row .content-2 {
+    flex: 0 0 40rem;
+    padding: 50px;
+    background: #23232387;
+    text-align: left;
+    border-radius: 10px;
+}
+
+.about .row .content-2 h3{
+    font-family: "Ubuntu", sans-serif;
+   font-size: 30px;
+   color: white;
+   margin: 0 0 30px;
+   text-align: left;
+   line-height: 1;
+}
+
+.about .row .content-2 p{
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 0 0 30px;
+    text-align: left;
+    line-height: 1.9;
+}
+.Contact .con{
+    display: flex;
+    align-items: center;
+    background: var(--black);
+    flex-wrap: wrap;
+}
+.Contact .con .text {
+    flex: 0 0 40rem;
+    padding: 90px;
+    background: #23232387;
+    text-align: right;
+    border-radius: 10px;
+}
+.con-img img{
+    flex: 1 1 45rem;
+    width: 370px;
+    border-radius: 10px;
+}
+.Contact .con .text h3{
+    font-family: "Ubuntu", sans-serif;
+   font-size: 30px;
+   color: white;
+   margin: 0 0 30px;
+   text-align: right;
+   line-height: 1;
+}
+
+.Contact .con .text p{
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 0 0 30px;
+    text-align: right;
+    line-height: 1.9;
+}
+.con1-img img{
+    flex: 1 1 45rem;
+    width: 200px;
+    height: 340px;
+    border-radius: 10px;
+}
+.Contact .con .text1 h3{
+    font-family: "Ubuntu", sans-serif;
+   font-size: 30px;
+   color: white;
+   margin: 0 0 30px;
+   text-align: left;
+   line-height: 1;
+}
+
+.Contact .con .text1 p{
+    font-family: "Kanit", sans-serif;
+    font-size: 15px;
+    color: white;
+    margin: 0 0 30px;
+    text-align: left;
+    line-height: 1.9;
+}
+.Contact .con .text1 {
+    flex: 0 0 40rem;
+    padding: 80px ;
+    background: #23232387;
+    text-align: left;
+    border-radius: 10px;
+}
